@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>reveal.js - Math Plugin</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
+<link rel="stylesheet" href="bower_components/reveal.js/css/theme/night.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+      <div class="slides">
+          <section>
+            <h3>Theory of Computation</h3>
+            <p>Kevin Bastien</p>
+
+          </section>
+          <section>
+              <section>Showing a language is decidable with a Turing Machine.</section>
+              <section>Step 1</section>
+              <section>Step 2</section>
+              <section>Step 3</section>
+          </section>
+          <section data-background="gif.gif">Thank you!</section>
+      </div>
+  </div>
+  <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+  <script src="bower_components/reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+  Reveal.initialize({
+    history: true,
+    transition: 'default',
+
+    dependencies: [
+      { src: 'bower_components/reveal.js/lib/js/classList.js' },
+      { src: 'bower_components/reveal.js/plugin/math/math.js', async: true }
+    ]
+  });
+
+  </script>
+</body>
+</html>
