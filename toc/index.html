@@ -50,16 +50,24 @@
                 <h3>Example</h3>
                 <p><code>Consider B = {&#60P&#62 | P is a PDA with &#931 = {a,b} and P does not accept any strings with an odd number of a's} </code></p>
               </section>
-              
+
               <!-- Slide 5 -->
               <section>
-                <h3>Proof</h3>
+                <h3>Concept</h3>
                 <p>We know that Context Free Languages are closed under intersection with regular languages</p>
+                <p>This is how I thought of it...</p>
+                <img src="concept.png">
+              </section>
+
+
+              <!-- Slide 6 -->
+              <section>
+                <h3>Proof</h3>      
                 <p class="proof">Construct a Turing Machine M to decide B as follows:</p>
                 <p class="proof">On input &#60P&#62:</p>
                 <ol class="proof">
                   <li>Check that &#60P&#62 is in the proper form of a PDA. If not, reject.</li>
-                  <li>Create a DFA D that: accepts any strings w/ an odd # of a's.</li>
+                  <li>Create a DFA D that accepts any strings w/ an odd # of a's.</li>
                   <li>Create a PDA E that has the same language as B.</li>
                   <li>Create a PDA F where L(F) = L(D) &#8745 L(E).</li>
                   <li>Convert F to CFG G</li>
@@ -67,8 +75,9 @@
                 </ol>
                 <p class="proof">If A accepts, accept for B. Otherwise, reject.</p>
               </section>
-
           </section>
+
+          <!-- Slide 7-->
           <section data-background="gif.gif"><h2>Thank you!</h2></section>
       </div>
   </div>
