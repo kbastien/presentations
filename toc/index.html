@@ -16,7 +16,7 @@
       <div class="slides">
           <!-- Slide 1 -->
           <section>
-            <h3>Showing a language is decidable with a TM</h3>
+            <h3>Showing a language is decidable with a TM (English Description)</h3>
             <p>Kevin Bastien</p>
           </section>
           <section>
@@ -34,9 +34,9 @@
               <!-- Slide 3 -->
               <section>
                 <h3>Recall</h3>
-                  <p>You may use these other proven decidable languages in your TM:</p>
+                  <p>We can use these other proven decidable languages in our TM:</p>
                   <ul>
-                    <li>A<sub>DFA</sub>= {&#60D,w&#62 | a DFA that accepts w}</li>
+                    <li>A<sub>DFA</sub>= {&#60D,w&#62 | D is a DFA that accepts w}</li>
                     <li>A<sub>NFA</sub>= {&#60N,w&#62 | N is a NFA that accepts w}</li>
                     <li>E<sub>DFA</sub>= {&#60D&#62 | D is a DFA and L(D) is empty}</li>
                     <li>EQ<sub>DFA</sub>= {&#60A,B&#62 | A and B are DFA's and L(A)=L(B)}</li>
@@ -68,10 +68,10 @@
                 <ol class="proof">
                   <li>Check that &#60P&#62 is in the proper form of a PDA. If not, reject.</li>
                   <li>Create a DFA D that accepts any strings w/ an odd # of a's.</li>
-                  <li>Create a PDA E that has the same language as B.</li>
-                  <li>Create a PDA F where L(F) = L(D) &#8745 L(E).</li>
+                  <li>Create a PDA F where L(F) = L(D) &#8745 L(P).</li>
                   <li>Convert F to CFG G</li>
-                  <li>Run E<sub>CFG</sub> A on G.</li>
+                  <li>Since we know E<sub>CFG</sub>= {&#60G&#62 | G is a CFG and L(G) is empty} is decidable. We can run E<sub>CFG</sub> A on G.
+                  </li>
                 </ol>
                 <p class="proof">If A accepts, accept for B. Otherwise, reject.</p>
               </section>
